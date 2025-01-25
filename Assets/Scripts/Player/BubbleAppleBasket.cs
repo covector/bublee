@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class BubbleAppleBasket : MonoBehaviour
 {
-
-    //public GameObject newPrefab;
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("BubbleApple Trigger detected with " + other.gameObject.name);
+
         if (other.gameObject.CompareTag("Basket"))
         {
             Debug.Log("BubbleApple Trigger detected with Basket");
@@ -17,5 +17,4 @@ public class BubbleAppleBasket : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }
