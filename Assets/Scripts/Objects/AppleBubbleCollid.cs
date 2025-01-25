@@ -43,6 +43,8 @@ public class AppleBubbleCollid : MonoBehaviour
             // Destroy the current apple GameObject
             Destroy(gameObject);
         }
+
+    
     }
 
    

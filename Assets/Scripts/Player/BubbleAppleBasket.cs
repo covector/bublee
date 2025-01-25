@@ -4,7 +4,7 @@ using UnityEngine;
 {
     void OnCollisionEnter2D(Collision2D collision)
     {
-
+        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.CompareTag("Basket"))
         {
             Debug.Log("Collision detected with Basket");
