@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3608574021335977528}
   - component: {fileID: 2930548534210471063}
   - component: {fileID: 7599950454752128885}
+  - component: {fileID: 2310774534892484924}
   m_Layer: 3
   m_Name: Ground
   m_TagString: Ground
@@ -134,3 +135,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2310774534892484924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4265922607186403017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad99db86fec5f8749b9c931a6271f225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollDirection: 0
+  spritePrefab: {fileID: 0}
