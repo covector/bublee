@@ -27,7 +27,7 @@ public class AppleSpawner : MonoBehaviour
     {
         //areaMax = new Vector2(rightWall.bounds.min.x - paddingX.y, topWall.bounds.min.y - paddingY.y);
         //areaMin = new Vector2(leftWall.bounds.max.x + paddingX.x, bottomWall.bounds.max.y + paddingY.x);
-        areaMax = new Vector2(0.39f, 4.1f);
+        areaMax = new Vector2(5f, 4.1f);
         areaMin = new Vector2(-5.8f, 0f);
         Spawn();
         new WaitForSeconds(0.5f);
