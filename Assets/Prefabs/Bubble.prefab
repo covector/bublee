@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4122401551504763011}
   - component: {fileID: -6983790877425197768}
   - component: {fileID: -5364029253865485752}
-  - component: {fileID: -17355566690797202}
+  - component: {fileID: -9069163203658793356}
   m_Layer: 0
   m_Name: Bubble
   m_TagString: Bubble
@@ -130,7 +130,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &-17355566690797202
+--- !u!58 &-9069163203658793356
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

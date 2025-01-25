@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 
+[DisallowMultipleComponent]
 public class FadeOut : MonoBehaviour
 {
     Action currentCallback;
