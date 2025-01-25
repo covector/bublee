@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3006552680272791672}
   - component: {fileID: 817706351886651296}
   - component: {fileID: 6399227978619529176}
+  - component: {fileID: -874526611363302697}
+  - component: {fileID: 2984693495556348613}
   m_Layer: 0
   m_Name: apple 1
   m_TagString: Untagged
@@ -162,3 +164,53 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-874526611363302697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111813505861444624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41dd7562a7a9f014c8f07fcdb499078a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newPrefab: {fileID: 1334715457036435750, guid: 0aadc2c4fc0396b40911ac7bf79b3d18, type: 3}
+  newPrefabRotten: {fileID: 1264242709689176716, guid: 4b585404d214cbd4aad756841e4d1c23, type: 3}
+--- !u!58 &2984693495556348613
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3111813505861444624}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 5.3700004

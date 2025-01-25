@@ -6,6 +6,8 @@ TagManager:
   tags:
   - killzone
   - Coin
+  - Bubble
+  - Ground
   layers:
   - Default
   - TransparentFX

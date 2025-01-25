@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Transition_FadeOut_0: -1433929448250879559
+      Transition_FadeOut_1: -8809515417455704900
+      Transition_FadeOut_2: -8599566002833681697
+      Transition_FadeOut_3: 505241844422955141
+      Transition_FadeOut_4: -4845239426750950487
+      Transition_FadeOut_5: -6702876696449216378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

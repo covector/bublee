@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rotten apple_0: 5832671378977703257
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

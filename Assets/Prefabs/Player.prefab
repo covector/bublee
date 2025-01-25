@@ -10003,8 +10003,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  jumpForce: 60
-  doubleJumpForce: 0
+  jumpForce: 30
+  doubleJumpForce: 40
   groundLayer:
     serializedVersion: 2
     m_Bits: 9
@@ -10094,7 +10094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 3774875295661319787}
   firePoint: {fileID: 8804255670428636664}
-  projectilePrefab: {fileID: 8066584047029484, guid: e18c836e330ad524e96756c19652b637, type: 3}
+  projectilePrefab: {fileID: 5746382810402386754, guid: ce32754ecbaea3342842e4a46df1e61a, type: 3}
   projectileForce: 10
 --- !u!120 &3774875295661319787
 LineRenderer:
@@ -10151,8 +10151,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.03811264
-        value: 0.13008207
+        time: 0.06752014
+        value: 0.09876251
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -10192,10 +10192,10 @@ LineRenderer:
       m_ColorSpace: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 0
+    numCornerVertices: 1
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 3
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0

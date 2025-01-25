@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Transition_FadeIn_0: -7715093784620822505
+      Transition_FadeIn_1: 1989868650635011066
+      Transition_FadeIn_2: 8857297791167662539
+      Transition_FadeIn_3: 3522999725781587828
+      Transition_FadeIn_4: 6831699253094097987
+      Transition_FadeIn_5: -5752496355159620821
+      Transition_FadeIn_6: 941619215148185511
+      Transition_FadeIn_7: 3511765122504143528
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
