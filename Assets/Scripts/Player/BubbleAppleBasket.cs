@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BubbleAppleBasket : MonoBehaviour
+    public class BubbleAppleBasket : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {

@@ -10275,6 +10275,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 13.34
       objectReference: {fileID: 0}
+    - target: {fileID: 4856684510095740282, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5095051980313794205, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
       propertyPath: m_Name
       value: girl
