@@ -10,8 +10,13 @@ public class AppleSpawner : MonoBehaviour
     //public BoxCollider2D rightWall;
     //public BoxCollider2D bottomWall;
     //public BoxCollider2D leftWall;
-    Vector2 areaMin;
-    Vector2 areaMax;
+    Vector2 areaMinL;
+    Vector2 areaMaxL;
+
+    Vector2 areaMinR;
+    Vector2 areaMaxR;
+
+
     public GameObject prefab;
     public int maxSpawn = 10;
     //public float spawnDelay = 1f;
@@ -27,8 +32,11 @@ public class AppleSpawner : MonoBehaviour
     {
         //areaMax = new Vector2(rightWall.bounds.min.x - paddingX.y, topWall.bounds.min.y - paddingY.y);
         //areaMin = new Vector2(leftWall.bounds.max.x + paddingX.x, bottomWall.bounds.max.y + paddingY.x);
-        areaMax = new Vector2(5f, 5.1f);
-        areaMin = new Vector2(-5.8f, 1f);
+        areaMaxL = new Vector2(-1.1f, 7f);
+        areaMinL = new Vector2(-7f, 1.6f);
+
+        areaMaxR = new Vector2(7.6f, 6.8f);
+        areaMinR = new Vector2(1f, 1.6f);
         Spawn();
         new WaitForSeconds(0.5f);
         StartCoroutine(DropAppleAtIntervals(dropAppleInterval));
@@ -39,10 +47,28 @@ public class AppleSpawner : MonoBehaviour
         for (int i = 0; i < maxSpawn; i++)
         {
             Debug.Log(i);
-            Vector2 pos = new Vector2(UnityEngine.Random.Range(areaMin.x, areaMax.x), UnityEngine.Random.Range(areaMin.y, areaMax.y));
-            GameObject obj = Instantiate(prefab, pos, Quaternion.identity, transform);
-            obj.GetComponent<Rigidbody2D>().simulated = false;
-            instantiatedObjects.Add(obj);
+
+            //make a random number to see if it will spawn on the left or right
+            int random = Random.Range(0, 2);
+            if (random == 0)
+            {
+                Vector2 pos = new Vector2(UnityEngine.Random.Range(areaMinL.x, areaMaxL.x), UnityEngine.Random.Range(areaMinL.y, areaMaxL.y));
+                GameObject obj = Instantiate(prefab, pos, Quaternion.identity, transform);
+                obj.GetComponent<Rigidbody2D>().simulated = false;
+                instantiatedObjects.Add(obj);
+            }
+            else
+            {
+                Vector2 pos = new Vector2(UnityEngine.Random.Range(areaMinR.x, areaMaxR.x), UnityEngine.Random.Range(areaMinR.y, areaMaxR.y));
+                GameObject obj = Instantiate(prefab, pos, Quaternion.identity, transform);
+                obj.GetComponent<Rigidbody2D>().simulated = false;
+                instantiatedObjects.Add(obj);
+            }
+
+            //Vector2 pos = new Vector2(UnityEngine.Random.Range(areaMin.x, areaMax.x), UnityEngine.Random.Range(areaMin.y, areaMax.y));
+            //GameObject obj = Instantiate(prefab, pos, Quaternion.identity, transform);
+            //obj.GetComponent<Rigidbody2D>().simulated = false;
+            //instantiatedObjects.Add(obj);
         }
     }
 
