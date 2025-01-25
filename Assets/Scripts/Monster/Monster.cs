@@ -221,13 +221,13 @@ public class MonsterBehavior : MonoBehaviour
     /// <param name="direction">Direction vector.</param>
     private void FlipSpriteIfNeeded(Vector2 direction)
     {
-        if (direction.x < 0 && transform.localScale.x > 0)
+        if (direction.x < 0 && transform.localScale.x < 0)
         {
             transform.localScale = new Vector3(-transform.localScale.x,
                                                transform.localScale.y,
                                                transform.localScale.z);
         }
-        else if (direction.x > 0 && transform.localScale.x < 0)
+        else if (direction.x > 0 && transform.localScale.x > 0)
         {
             transform.localScale = new Vector3(-transform.localScale.x,
                                                transform.localScale.y,
