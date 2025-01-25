@@ -11,7 +11,7 @@ public class MonsterBehavior : MonoBehaviour
     public float dashDistance = 5f;       // How far the monster travels when dashing
 
     [Header("Health Settings")]
-    public int maxHealth = 5;              // Maximum health of the monster
+    public int maxHealth = 8;              // Maximum health of the monster
     private int currentHealth;             // Current health
 
     private Transform player;
@@ -170,21 +170,21 @@ public class MonsterBehavior : MonoBehaviour
         }
 
         // Handle collision with Bubble
-        if (collision.gameObject.CompareTag("Bubble"))
-        {
-            Debug.Log("Monster hit by bubble!");
-            TakeDamage(1);
+        //if (collision.gameObject.CompareTag("Bubble"))
+        //{
+        //    Debug.Log("Monster hit by bubble!");
+        //    TakeDamage(1);
 
-            // Destroy the bubble after collision
-            Destroy(collision.gameObject);
-        }
+        //    // Destroy the bubble after collision
+        //    Destroy(collision.gameObject);
+        //}
     }
 
     /// <summary>
     /// Reduces the monster's health and checks for death.
     /// </summary>
     /// <param name="damage">Amount of damage to take.</param>
-    private void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         Debug.Log($"Monster took {damage} damage. Current Health: {currentHealth}");
