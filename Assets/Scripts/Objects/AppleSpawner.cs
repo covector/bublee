@@ -72,6 +72,7 @@ public class AppleSpawner : MonoBehaviour
         int randomIndex = UnityEngine.Random.Range(0, instantiatedObjects.Count);
         GameObject selectedApple = instantiatedObjects[randomIndex];
         StartCoroutine(ShakeApple(selectedApple));
+        GetComponent<AudioSource>().Play();
     }
 
     private IEnumerator ShakeApple(GameObject obj)
