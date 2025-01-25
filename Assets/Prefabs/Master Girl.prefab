@@ -9934,7 +9934,7 @@ GameObject:
   - component: {fileID: 2077110667578796710}
   - component: {fileID: 3570116544504186089}
   - component: {fileID: 9094817931791986050}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Master Girl
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -10274,6 +10274,10 @@ PrefabInstance:
     - target: {fileID: 3394695706778816662, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
       propertyPath: m_LocalPosition.y
       value: 13.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856684510095740282, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5095051980313794205, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
       propertyPath: m_Name

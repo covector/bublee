@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public static class Utils
 {
@@ -18,5 +19,10 @@ public static class Utils
     {
         yield return unscaledTime ? new WaitForSecondsRealtime(delay) : new WaitForSeconds(delay);
         action();
+    }
+
+    public static void ResetLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
