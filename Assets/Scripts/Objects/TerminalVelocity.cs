@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bubble : MonoBehaviour
+public class TerminalVelocity : MonoBehaviour
 {
     public float terminalVelocity = 2f; // Maximum speed of the bubble
 
