@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8036268608470710990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7307319164610012497}
+  - component: {fileID: 2403619252515996310}
+  m_Layer: 0
+  m_Name: Boss Wrapper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7307319164610012497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036268608470710990}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5325513873410097790}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2403619252515996310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036268608470710990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 022eaa02bd0f92d458be6243051e2e48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 7520707265330888384}
+--- !u!1001 &4772830661691195058
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7307319164610012497}
+    m_Modifications:
+    - target: {fileID: 852454207950961868, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1130478
+      objectReference: {fileID: 0}
+    - target: {fileID: 852454207950961868, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.46051005
+      objectReference: {fileID: 0}
+    - target: {fileID: 852454207950961868, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02830842
+      objectReference: {fileID: 0}
+    - target: {fileID: 852454207950961868, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 852454207950961868, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 852454207950961868, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 852454207950961868, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 852454207950961868, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 852454207950961868, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 852454207950961868, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371222737627837698, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_Name
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914216154003178484, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4127262479151067276, guid: a7b0dc4efb9727c43b7a9ba6ce05d3b3, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6371222737627837698, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7520707265330888384}
+  m_SourcePrefab: {fileID: 100100000, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+--- !u!1 &1898163209668447152 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6371222737627837698, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+  m_PrefabInstance: {fileID: 4772830661691195058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7520707265330888384
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898163209668447152}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c8151ce98861427479a35ace1913b2df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &5325513873410097790 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 852454207950961868, guid: 160324fd605d6474c93ef7e6aa133aef, type: 3}
+  m_PrefabInstance: {fileID: 4772830661691195058}
+  m_PrefabAsset: {fileID: 0}
