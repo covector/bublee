@@ -28,7 +28,7 @@ public class MonsterBehavior : MonoBehaviour
     }
 
     private MonsterState currentState;
-
+    public Animator animator;
     // Optional: Reference to a health bar UI or effects
     // public HealthBar healthBar;
 
@@ -115,14 +115,15 @@ public class MonsterBehavior : MonoBehaviour
         // Stand still for chargeTime seconds
         while (timer < chargeTime)
         {
+            animator.SetBool("GatherEnergy", true);
             timer += Time.deltaTime;
-
             // Optionally play a charging animation, show VFX, etc.
 
             yield return null;
         }
 
         // Transition to Dashing
+        animator.SetBool("GatherEnergy", false);
         currentState = MonsterState.Dashing;
     }
 
@@ -134,6 +135,7 @@ public class MonsterBehavior : MonoBehaviour
         // Dash until we've traveled the designated distance
         while (traveledDistance < dashDistance)
         {
+            animator.SetBool("Rush", true);
             float step = dashSpeed * Time.deltaTime;
             transform.Translate(dashDirection * step, Space.World);
             traveledDistance += step;
@@ -145,7 +147,7 @@ public class MonsterBehavior : MonoBehaviour
         }
 
         isDashing = false;
-
+        animator.SetBool("Rush", false);
         // After dash, return to Walking
         currentState = MonsterState.Walking;
     }
@@ -187,6 +189,7 @@ public class MonsterBehavior : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        FindFirstObjectByType <Blood>().UpdateHealthUI(currentHealth);
         Debug.Log($"Monster took {damage} damage. Current Health: {currentHealth}");
 
         // Optionally update health bar
@@ -207,7 +210,8 @@ public class MonsterBehavior : MonoBehaviour
     private void Die()
     {
         Debug.Log("Monster has died!");
-
+        animator.SetTrigger("Death");
+        new WaitForSeconds(1f);
         // Optionally play death animation or effects here
 
         // Destroy the monster game object
@@ -221,13 +225,13 @@ public class MonsterBehavior : MonoBehaviour
     /// <param name="direction">Direction vector.</param>
     private void FlipSpriteIfNeeded(Vector2 direction)
     {
-        if (direction.x < 0 && transform.localScale.x > 0)
+        if (direction.x < 0 && transform.localScale.x < 0)
         {
             transform.localScale = new Vector3(-transform.localScale.x,
                                                transform.localScale.y,
                                                transform.localScale.z);
         }
-        else if (direction.x > 0 && transform.localScale.x < 0)
+        else if (direction.x > 0 && transform.localScale.x > 0)
         {
             transform.localScale = new Vector3(-transform.localScale.x,
                                                transform.localScale.y,
