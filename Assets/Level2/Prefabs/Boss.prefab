@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 852454207950961868}
   - component: {fileID: 7914216154003178484}
   m_Layer: 0
-  m_Name: BossWalkSpritesheet_0
+  m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
