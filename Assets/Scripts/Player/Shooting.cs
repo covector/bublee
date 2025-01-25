@@ -5,7 +5,9 @@ public class Shooting : MonoBehaviour
     public LineRenderer lineRenderer; // Attach a LineRenderer component
     public Transform firePoint; // The starting point of the line
     public GameObject projectilePrefab; // The projectile to fire
-    public float projectileSpeed = 10f; // Speed of the projectile
+    //public float projectileSpeed = 10f; // Speed of the projectile
+    public float projectileForce = 3f; // Force applied to the projectile
+
 
     void Update()
     {
@@ -41,7 +43,8 @@ public class Shooting : MonoBehaviour
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>(); // Use Rigidbody2D for 2D physics
         if (rb != null)
         {
-            rb.linearVelocity = direction * projectileSpeed;
+            //rb.linearVelocity = direction * projectileSpeed;
+            rb.AddForce(direction * projectileForce, ForceMode2D.Impulse);
         }
     }
 }
