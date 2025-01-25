@@ -1,8 +1,11 @@
+using UnityEditor;
 using UnityEngine;
 
 public class BalloonDoggy : MonoBehaviour
 {
     private MonsterBehavior monsterBehavior;
+    public Animator animator;
+    public Blood blood;
 
     private void Start()
     {
@@ -25,6 +28,8 @@ public class BalloonDoggy : MonoBehaviour
             if (monsterBehavior != null)
             {
                 monsterBehavior.TakeDamage(1);
+                animator.ResetTrigger("Hurt");
+                animator.SetTrigger("Hurt");
             }
 
             // Destroy the bubble so it doesn't deal damage repeatedly
