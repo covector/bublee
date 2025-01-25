@@ -221,7 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 323790504}
   - component: {fileID: 323790505}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ Transform:
   m_GameObject: {fileID: 323790503}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.4246855, y: -2.959103, z: -0.48103717}
+  m_LocalPosition: {x: 0, y: -2.959103, z: -0.48103717}
   m_LocalScale: {x: 1.0606896, y: 1.0848, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -308,7 +308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950477879}
   - component: {fileID: 950477880}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Balloon Doggy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ Transform:
   m_GameObject: {fileID: 950477878}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.1646852, y: -4.899103, z: -0.48103717}
+  m_LocalPosition: {x: 0, y: -4.899103, z: -0.48103717}
   m_LocalScale: {x: 1.3841077, y: 0.26802132, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -394,8 +394,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1179835774}
-  - component: {fileID: 1179835775}
-  m_Layer: 0
+  - component: {fileID: 1179835776}
+  - component: {fileID: 1179835777}
+  - component: {fileID: 1179835778}
+  m_Layer: 6
   m_Name: Combine Master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +413,7 @@ Transform:
   m_GameObject: {fileID: 1179835773}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3053143, y: 2.969103, z: 0.48103717}
+  m_LocalPosition: {x: 0, y: 2.969103, z: 0.48103717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -419,8 +421,53 @@ Transform:
   - {fileID: 950477879}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1179835775
-BoxCollider2D:
+--- !u!114 &1179835776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179835773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d1e34a41ca2664d801db43f19c7e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 1
+  chargeTime: 1
+  walkTime: 0.5
+  dashSpeed: 10
+  dashDistance: 10
+  maxHealth: 5
+--- !u!50 &1179835777
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179835773}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &1179835778
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -453,18 +500,9 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.47700763, y: -3.1175869}
+  m_Size: {x: 2.4080315, y: 4.7589974}
+  m_Direction: 0
 --- !u!1001 &1639715702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -536,7 +574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3608574021335977528, guid: db98e609ae03adb499ff535d1dc35203, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.033395
+      value: 3.096793
       objectReference: {fileID: 0}
     - target: {fileID: 3608574021335977528, guid: db98e609ae03adb499ff535d1dc35203, type: 3}
       propertyPath: m_LocalPosition.x
@@ -544,7 +582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3608574021335977528, guid: db98e609ae03adb499ff535d1dc35203, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.482
+      value: -4.4503
       objectReference: {fileID: 0}
     - target: {fileID: 3608574021335977528, guid: db98e609ae03adb499ff535d1dc35203, type: 3}
       propertyPath: m_LocalPosition.z
@@ -595,9 +633,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 559683468462160638, guid: c775a353f920da54eb2ac8ced83e4d5b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550827048559638654, guid: c775a353f920da54eb2ac8ced83e4d5b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245794066672022287, guid: c775a353f920da54eb2ac8ced83e4d5b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7469950465325271981, guid: c775a353f920da54eb2ac8ced83e4d5b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684510011911230484, guid: c775a353f920da54eb2ac8ced83e4d5b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7742995023774146874, guid: c775a353f920da54eb2ac8ced83e4d5b, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742995023774146874, guid: c775a353f920da54eb2ac8ced83e4d5b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8804255670428636664, guid: c775a353f920da54eb2ac8ced83e4d5b, type: 3}
       propertyPath: m_LocalPosition.x
