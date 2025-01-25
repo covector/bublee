@@ -10094,7 +10094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 3774875295661319787}
   firePoint: {fileID: 8804255670428636664}
-  projectilePrefab: {fileID: 5746382810402386754, guid: ce32754ecbaea3342842e4a46df1e61a, type: 3}
+  projectilePrefab: {fileID: 5746382810402386754, guid: e18c836e330ad524e96756c19652b637, type: 3}
   projectileForce: 10
 --- !u!120 &3774875295661319787
 LineRenderer:
