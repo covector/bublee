@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\u8840\u689Dbubble_0": -1091008736221006699
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
