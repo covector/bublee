@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class WinTimer : MonoBehaviour
 {
-    public float winTime = 30;
+    public float winTime = 45;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
