@@ -7,7 +7,7 @@ public class MeteorSpawner : MonoBehaviour
     public GameObject[] meteorPrefabs; // Assign 3 different meteor prefab references in the Inspector
 
     [Header("Spawn Settings")]
-    public float spawnInterval = 1f;     // Time between spawns
+    public float spawnInterval = 0.3f;     // Time between spawns
     public float minX = -10f;           // Left boundary of spawn position (world space)
     public float maxX = 10f;            // Right boundary of spawn position (world space)
     public float spawnY = 6f;           // Y position above the screen where meteors spawn

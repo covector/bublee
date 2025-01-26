@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections;
 using static Utils;
 using System.Collections.Generic;
-using static UnityEditor.PlayerSettings;
 
 public class AppleSpawner : MonoBehaviour
 {
