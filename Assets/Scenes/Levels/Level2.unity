@@ -2001,7 +2001,7 @@ PrefabInstance:
       objectReference: {fileID: 787614601}
     - target: {fileID: 3570116544504186089, guid: 8302f021aa5b1ff4397e71211b4b47f5, type: 3}
       propertyPath: jumpForce
-      value: 70
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3570116544504186089, guid: 8302f021aa5b1ff4397e71211b4b47f5, type: 3}
       propertyPath: playeranim

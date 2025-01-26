@@ -5043,6 +5043,8 @@ MonoBehaviour:
   firePoint: {fileID: 1753458595886203577}
   projectilePrefab: {fileID: 5746382810402386754, guid: e18c836e330ad524e96756c19652b637, type: 3}
   projectileForce: 10
+  fireRate: 2
+  isPaused: 0
 --- !u!120 &8699024157988762215
 LineRenderer:
   serializedVersion: 2
@@ -5163,7 +5165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  jumpForce: 30
+  jumpForce: 60
   doubleJumpForce: 45
   groundLayer:
     serializedVersion: 2
