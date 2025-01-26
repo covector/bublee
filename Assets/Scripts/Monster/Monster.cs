@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MonsterBehavior : MonoBehaviour
 {
@@ -154,16 +155,17 @@ public class MonsterBehavior : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {   
-        Debug.Log("Monster collided with " + collision);
+        //Debug.Log("Monster collided with " + collision);
         // Handle collision with Player
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Monster collided with player during dash!");
+            //Debug.Log("Monster collided with player during dash!");
             // Call the player's death method
             PlayerController playerController = collision.gameObject.GetComponent<PlayerController>();
             if (playerController != null)
             {
                 Debug.Log("PLAYER DIE");
+                FindFirstObjectByType<DeathScreen>().ShowDeathScreen();
             }
             else
             {
@@ -208,14 +210,19 @@ public class MonsterBehavior : MonoBehaviour
     /// Handles the monster's death.
     /// </summary>
     private void Die()
-    {
+    {   
         Debug.Log("Monster has died!");
         animator.SetTrigger("Death");
-        new WaitForSeconds(1f);
+        StartCoroutine(Delay1s(5f));
         // Optionally play death animation or effects here
-
-        // Destroy the monster game object
         Destroy(gameObject);
+        FindFirstObjectByType<FadeOut>().Play(() => SceneManager.LoadScene("Level3"));
+        // Destroy the monster game object
+    }
+
+    IEnumerator Delay1s(float time)
+    {
+        yield return new WaitForSeconds(time);
     }
 
     /// <summary>
