@@ -1,12 +1,17 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
     public class BubbleAppleBasket : MonoBehaviour
 {
-    public int score = 0;
+
+    public GameObject newPrefab;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        //FloorAppleDie otherScript = newPrefab.GetComponent<FloorAppleDie>();
+
         Debug.Log(collision.gameObject.tag);
         //if (collision.gameObject.CompareTag("Basket"))
         if (collision.gameObject.tag == "Player")
@@ -20,13 +25,15 @@ using UnityEngine.SceneManagement;
             Destroy(gameObject);
 
             // Increase the score
-            score++;
 
-            if (score == 10)
-            {
-                Debug.Log("You win!");
-                FindFirstObjectByType<FadeOut>().Play(() => SceneManager.LoadScene("Level2"));
-            }
+            //otherScript.score++;
+            //newPrefab.score++;
+            //Debug.Log("Score: " + score);
+
+            
+
+
+            
 
         }
     }

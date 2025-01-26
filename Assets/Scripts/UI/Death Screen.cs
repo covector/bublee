@@ -13,15 +13,18 @@ public class DeathScreen : MonoBehaviour
     public void Retry()
     {
         FindFirstObjectByType<FadeOut>().Play(() => ResetLevel());
+        Time.timeScale = 1;
     }
 
     public void Quit()
     {
         FindFirstObjectByType<FadeOut>().Play(() => SceneManager.LoadScene("Menu"));
+        Time.timeScale = 1;
     }
 
     public void ShowDeathScreen()
     {
+        Time.timeScale = 0;
         GetComponent<Canvas>().enabled = true;
     }
 }
