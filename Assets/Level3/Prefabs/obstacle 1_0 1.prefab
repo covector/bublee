@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2639347746739569572}
   - component: {fileID: 7246781381506251931}
   - component: {fileID: 6583380754394192838}
+  - component: {fileID: 882349267574400025}
   m_Layer: 7
   m_Name: obstacle 1_0 1
   m_TagString: Untagged
@@ -128,4 +129,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2295015d3e501c94fa53b56e224a039b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 10
+  lifetime: 3
+--- !u!70 &882349267574400025
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8557914813740585825}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.1280414, y: 0.29384187}
+  m_Size: {x: 12.032961, y: 10.981706}
+  m_Direction: 1
