@@ -9903,6 +9903,7 @@ GameObject:
   - component: {fileID: 2077110667578796710}
   - component: {fileID: 3570116544504186089}
   - component: {fileID: 9094817931791986050}
+  - component: {fileID: 5853545958553238128}
   m_Layer: 6
   m_Name: old Master Girl
   m_TagString: Player
@@ -10144,6 +10145,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &5853545958553238128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6364857737421481338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6085b840abc45f9479193c1b376cfc92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1100994696955132996}
+  rb: {fileID: 9094817931791986050}
 --- !u!1 &7585032701730838143
 GameObject:
   m_ObjectHideFlags: 0
@@ -10456,6 +10471,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7412252024388330800}
   m_SourcePrefab: {fileID: 100100000, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
+--- !u!95 &1100994696955132996 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3232804731212833210, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
+  m_PrefabInstance: {fileID: 2565571920443334142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7291324333182208867 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5095051980313794205, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
