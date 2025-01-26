@@ -51,19 +51,16 @@ public class Meteor : MonoBehaviour
     /// Detect collision with player. If the meteor hits the player, do something (e.g. damage).
     /// </summary>
     /// <param name="collision">Collision info.</param>
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Meteor hit the player!");
-            // Suppose the player has a script with a Die() or TakeDamage() method
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            if (player != null)
-            {
-                Debug.Log("Player takes damage!");
-            }
-            // Destroy the meteor after collision with the player
             Destroy(gameObject);
+
+            FindFirstObjectByType<DeathScreen>().ShowDeathScreen();
+
         }
     }
 }
