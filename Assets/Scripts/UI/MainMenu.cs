@@ -5,6 +5,6 @@ public class MainMenu : MonoBehaviour
 {
     public void Play()
     {
-        FindFirstObjectByType<FadeOut>().Play(() => SceneManager.LoadScene("Level1"));
+        FindFirstObjectByType<FadeOut>().Play(() => SceneManager.LoadScene("CutScene"));
     }
 }
