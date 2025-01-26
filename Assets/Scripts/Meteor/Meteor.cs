@@ -58,6 +58,9 @@ public class Meteor : MonoBehaviour
         {
             Debug.Log("Meteor hit the player!");
             Destroy(gameObject);
+
+            FindFirstObjectByType<DeathScreen>().ShowDeathScreen();
+
         }
     }
 }
