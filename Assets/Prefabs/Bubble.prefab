@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6983790877425197768}
   - component: {fileID: -5364029253865485752}
   - component: {fileID: -9069163203658793356}
-  - component: {fileID: 1692713430387379274}
+  - component: {fileID: -7735580841877453114}
   m_Layer: 0
   m_Name: Bubble
   m_TagString: Bubble
@@ -167,7 +167,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 4.4050007
---- !u!114 &1692713430387379274
+--- !u!114 &-7735580841877453114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

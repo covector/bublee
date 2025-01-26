@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3517489943516260087}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.10850048, y: 0.27149963, z: 0.00011757435}
+  m_LocalPosition: {x: -0.06, y: 0.11, z: 0.00011757435}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -132,7 +132,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.3452107, y: 0.5988025}
+  m_Size: {x: 1.3452107, y: 0.6988025}
   m_EdgeRadius: 0
 --- !u!1 &4140228240281947796
 GameObject:
@@ -9903,6 +9903,7 @@ GameObject:
   - component: {fileID: 2077110667578796710}
   - component: {fileID: 3570116544504186089}
   - component: {fileID: 9094817931791986050}
+  - component: {fileID: 5853545958553238128}
   m_Layer: 6
   m_Name: old Master Girl
   m_TagString: Player
@@ -9947,7 +9948,7 @@ CapsuleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -9965,8 +9966,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.1, y: -1.22}
-  m_Size: {x: 0.85, y: 2.3}
+  m_Offset: {x: -0.100000024, y: -1.3179039}
+  m_Size: {x: 0.85, y: 2.104192}
   m_Direction: 0
 --- !u!114 &4581382321686452541
 MonoBehaviour:
@@ -9984,6 +9985,8 @@ MonoBehaviour:
   firePoint: {fileID: 8055926633004596086}
   projectilePrefab: {fileID: 5746382810402386754, guid: e18c836e330ad524e96756c19652b637, type: 3}
   projectileForce: 10
+  fireRate: 2
+  isPaused: 0
 --- !u!120 &2077110667578796710
 LineRenderer:
   serializedVersion: 2
@@ -10105,16 +10108,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 8
   jumpForce: 30
-  doubleJumpForce: 55
+  doubleJumpForce: 45
   groundLayer:
     serializedVersion: 2
     m_Bits: 9
-  groundCheck: {fileID: 0}
-  playeranim: {fileID: 0}
+  groundCheck: {fileID: 1372474587115588743}
+  playeranim: {fileID: 1100994696955132996}
   controlmode: 1
   isPaused: 0
-  footsteps: {fileID: 0}
-  ImpactEffect: {fileID: 0}
+  footsteps: {fileID: 7152451971367862462}
+  ImpactEffect: {fileID: 4652588499857608812}
   shootingRay: 1
   fireRate: 5
 --- !u!50 &9094817931791986050
@@ -10144,6 +10147,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &5853545958553238128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6364857737421481338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6085b840abc45f9479193c1b376cfc92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1100994696955132996}
+  rb: {fileID: 9094817931791986050}
 --- !u!1 &7585032701730838143
 GameObject:
   m_ObjectHideFlags: 0
@@ -10160,7 +10177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7426049053116086934
 Transform:
   m_ObjectHideFlags: 0
@@ -10332,6 +10349,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5095051980313794205, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5127807432762034626, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -10456,6 +10477,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7412252024388330800}
   m_SourcePrefab: {fileID: 100100000, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
+--- !u!95 &1100994696955132996 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3232804731212833210, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
+  m_PrefabInstance: {fileID: 2565571920443334142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7291324333182208867 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5095051980313794205, guid: 3d794be0a3880fd438e3b89f4df36415, type: 3}
