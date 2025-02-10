@@ -9,7 +9,7 @@
 </div>
 
 ## 🫧 About
-Bublee is an adventure game that allows the player to discover the charm of blowing bubbles through the eyes of a little girl. Set out on an adventure with her, as she experience wonders in her day-to-day life. Accompany her to the end of her journey...
+Bublee is an adventure game that allows the player to discover the charm of blowing bubbles through the eyes of a little girl. Set out on an adventure with her, as she experiences wonders in her day-to-day life. Accompany her to the end of her journey...
 
 Throughout the gameplay, you will be collecting apples for fun, fighting monsters, or maybe even going to space! Enjoy!
 <br/>*while it lasts...*
@@ -20,7 +20,7 @@ Throughout the gameplay, you will be collecting apples for fun, fighting monster
 
   ![A screenshot in level 1](docs/level1.png)
 
-  Press `[A]` and `[D]` to move left and right. Click `[Left Mouse Button]` to shoot bubbles, and catch them before they fall onto the ground!
+  Press `[A]` and `[D]` to move left and right. Click `[Left Mouse Button]` to shoot bubbles. Use the bubbles to catch any falling apples, and grab them before they fall onto the ground!
 </details>
 
 <details>
